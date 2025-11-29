@@ -24,3 +24,6 @@ const server = app.listen(8080, function () {
   const port = server.address().port;
   console.log("App listening at http://%s:%s", host, port);
 });
+
+const cors = require("cors");
+app.use(cors());
